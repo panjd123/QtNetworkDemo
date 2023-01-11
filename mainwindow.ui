@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>467</width>
+    <height>153</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>449</width>
+      <height>116</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="0">
+      <widget class="QLineEdit" name="clientGetEdit"/>
+     </item>
+     <item row="1" column="4">
+      <widget class="QPushButton" name="reStartButton">
+       <property name="text">
+        <string>RestartServer</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QPushButton" name="getButton_2">
+       <property name="text">
+        <string>ServerGet</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="showClientButton">
+       <property name="text">
+        <string>ShowClients</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLineEdit" name="clientSendEdit"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLineEdit" name="IPEdit">
+       <property name="text">
+        <string>10.47.145.75</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="getButton_1">
+       <property name="text">
+        <string>CilentGet</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2" colspan="2">
+      <widget class="QLineEdit" name="serverGetEdit"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="clientSendButton">
+       <property name="text">
+        <string>ClientSend</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QLineEdit" name="PORTEdit">
+       <property name="text">
+        <string>16667</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="reConnectButton">
+       <property name="text">
+        <string>Reconnect</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QPushButton" name="serverSendButton">
+       <property name="text">
+        <string>ServerSend</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="reSetButton">
+       <property name="text">
+        <string>ReSet</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="connectLabel">
+       <property name="text">
+        <string>Connection fail</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2" colspan="2">
+      <widget class="QLineEdit" name="serverSendEdit"/>
+     </item>
+     <item row="1" column="2" colspan="2">
+      <widget class="QLabel" name="lastOneLabel">
+       <property name="text">
+        <string>LastOne: </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
