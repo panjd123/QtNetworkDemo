@@ -36,8 +36,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(this->ui->reStartButton,&QPushButton::clicked,this,&MainWindow::reStart);
 
     // 客户端向 IP:PORT 连接
-    // 注意，如果你双开了这个 demo，第二个进程的服务端会因为端口被第一个进程占用而监听失败，所以你可以第二个进程事实上是没有服务端的
-    // 所以你可以用第二个进程当测试用客户端，第一个当测试用服务端。如果你用第一个当客户端尝试连接，会连到第一个进程自己。
+    // 注意，如果你双开了这个 demo，第二个进程的服务端会因为端口被第一个进程占用而监听失败，所以第二个进程事实上是没有服务端的
+    // 所以你可以用第二个进程当测试用客户端，第一个当测试用服务端，此时表现行为像是两台机器。
+    // 但如果你用第一个当客户端尝试连接，会连到第一个进程自己的服务端。
     this->socket->hello(IP,PORT);
     // 阻塞等待，2000ms超时
     this->socket->base()->waitForConnected(2000);
